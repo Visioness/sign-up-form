@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Norse;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu-Medium.ttf);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Ubuntu;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > div:first-child {
+  min-width: 300px;
+  width: 38%;
+  height: 100%;
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-color: #596D48;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container-logo {
+  width: 100%;
+  height: 160px;
+  position: relative;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.container-logo > span {
+  font-family: Norse;
+  font-size: 6rem;
+}
+
+#logo {
+  height: 100%;
+}
+
+.shootout {
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  padding: 1%;
+}
+
+.shootout > a {
+  color: white;
+  font-weight: bold;
+}
+
+.shootout > a:hover {
+  color: red;
+}
+
+.container > div:last-child {
+  width: 62%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(243, 243, 243);
+}
+
+.container > div:last-child > :nth-child(n):not(form) {
+  margin: 1rem 3rem 1rem 3rem;
+}
+
+p {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+form {
+  color: rgb(92, 92, 112);
+  width: 100%;
+  margin: 3rem 0 1rem 0;
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: white;
+}
+
+form > h2 {
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 16%;
+  margin-bottom: 1rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+}
+
+input {
+  min-width: 100px;
+  width: 240px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 0 4px 0 #ccc;
+  font-size: 0.9em;
+}
+
+input:focus {
+  border-color: rgb(0, 153, 255);
+  box-shadow: 0 0 4px 0 rgb(0, 102, 255);
+  outline: none;
+}
+
+input:not(:focus):invalid {
+  border-color: crimson;
+  box-shadow: 0 0 4px 0 crimson;
+}
+
+button[type="submit"] {
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  padding: 0.7em;
+  width: 200px;
+  border: none;
+  border-radius: 8px;
+}
+
+#log-in > a {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: bold;
+}

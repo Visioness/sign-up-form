@@ -10,7 +10,17 @@
 </head>
 <body>
   <div class="container">
-    <div></div>
+    <div>
+      <div class="container-logo">
+        <img id="logo" src="images/odin-lined.png" alt="The Odin Project logo">
+        <span>ODIN</span>
+      </div>
+
+      <div class="shootout">
+        Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </div>
+    </div>
+
     <div>
       <p>
         This is not a real online service!
@@ -22,43 +32,43 @@
       </p>
 
       <form id="sign-up">
-        <h3>Let's do this!</h3>
+        <h2>Let's do this!</h2>
 
-        <row>
-          <col>
+        <div class="row">
+          <div class="column">
             <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name">
-          </col>
-          <col>
+            <input type="text" id="first-name" name="first-name" required value="Thor">
+          </div>
+          <div class="column">
             <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name">
-          </col>
-        </row>
-        <row>
-          <col>
+            <input type="text" id="last-name" name="last-name" value="Odinson">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-          </col>
-          <col>
-            <label for="phone-number"></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="column">
+            <label for="phone-number">Phone Number</label>
             <input type="tel" id="phone-number" name="phone-number">
-          </col>
-        </row>
-        <row>
-          <col>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password">
-          </col>
-          <col>
-            <label for="confirm-password"></label>
-            <input type="password" id="confirm-password" name="confirm-password">
-          </col>
-        </row>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="column">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+        </div>
       </form>
 
       <button type="submit" form="sign-up">Create Account</button>
 
-      <span>Already have an account? <a href="#">Log In</a></span>
+      <span id="log-in">Already have an account? <a href="#">Log In</a></span>
     </div>
   </div>
 </body>
