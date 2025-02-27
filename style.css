@@ -143,7 +143,7 @@ input:focus {
   outline: none;
 }
 
-input:not(:focus):invalid {
+.validated input:not(:focus):invalid {
   border-color: crimson;
   box-shadow: 0 0 4px 0 crimson;
 }
@@ -154,8 +154,18 @@ button[type="submit"] {
   font-weight: bold;
   padding: 0.7em;
   width: 200px;
+  vertical-align: middle;
   border: none;
   border-radius: 8px;
+  transition: all 0.3s;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.95);
 }
 
 #log-in > a {
